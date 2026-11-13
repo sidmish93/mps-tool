@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mps-tool
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
